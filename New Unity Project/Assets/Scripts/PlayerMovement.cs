@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get inputs
         moveDirectionVertical = Input.GetAxis("Vertical");
-        moveDirectionHorizontal = Input.GetAxis("Horizontal");
+        moveDirectionHorizontal = Input.GetAxis("Horizontal") + moveSpeed/4;
         
 
         //Move
