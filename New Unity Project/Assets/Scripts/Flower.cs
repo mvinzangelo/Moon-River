@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Flower : MonoBehaviour
 {
     public float speed;
     public bool MoveLeft;
+    [SerializeField] ScoreUI scoreUI;
+    [SerializeField] int pointValue = 10; 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,6 +17,7 @@ public class Flower : MonoBehaviour
 
     private void DestroyFlower()
     {
+        scoreUI.IncreaseScore(pointValue);
         Destroy(gameObject);
     }
 
