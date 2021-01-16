@@ -15,18 +15,7 @@ public class HeartsUI : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            IncreaseHealth();
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            DecreaseHealth();
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SetHealthToFull();
-        }
+
     }
 
     public void SetHealthToFull()
