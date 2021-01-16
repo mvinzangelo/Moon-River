@@ -22,12 +22,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Get inputs
-        moveDirectionHorizontal = Input.GetAxis("Horizontal");
         moveDirectionVertical = Input.GetAxis("Vertical");
+        moveDirectionHorizontal = Input.GetAxis("Horizontal") + moveSpeed/4;
         
 
         //Move
-        rb.velocity = new Vector2(moveDirectionHorizontal * moveSpeed, rb.velocity.y);
-        rb2.velocity = new Vector2(moveDirectionVertical * moveSpeed, rb.velocity.x);
+        rb.velocity = new Vector2(moveDirectionVertical * moveSpeed, rb.velocity.y);
+        rb2.velocity = new Vector2(moveDirectionHorizontal * moveSpeed, rb.velocity.x);
     }
 }
