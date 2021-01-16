@@ -9,8 +9,16 @@ public class Rock : MonoBehaviour
         DestroyRock();
     }
 
+<<<<<<< Updated upstream
     private void DestroyRock() 
     {
         Destroy(gameObject);
     }
+=======
+    private void DestroyRock()
+    {
+        Destroy(gameObject);
+    }
+
+>>>>>>> Stashed changes
 }
