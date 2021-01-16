@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class RiverScrolling : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float scrollSpeed = 4f;
+    Material myMaterial;
+    Vector2 offSet;
+
+    private void Start()
     {
-        
+        myMaterial = GetComponent<Renderer>().material;
+        offSet = new Vector2(scrollSpeed, 0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        myMaterial.mainTextureOffset += offSet * Time.deltaTime;
     }
 }
