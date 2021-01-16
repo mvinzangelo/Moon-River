@@ -6,11 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed;
+    public float constantMovemement;
 
     private Rigidbody2D rb;
     private Rigidbody2D rb2;
     private float moveDirectionHorizontal;
     private float moveDirectionVertical;
+    
 
     private void Awake()
     {
@@ -23,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get inputs
         moveDirectionVertical = Input.GetAxis("Vertical");
-        moveDirectionHorizontal = Input.GetAxis("Horizontal") + moveSpeed/4;
+        moveDirectionHorizontal = Input.GetAxis("Horizontal") + constantMovemement;
         
 
         //Move
