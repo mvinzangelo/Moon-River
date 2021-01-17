@@ -14,6 +14,7 @@ public class Rock : MonoBehaviour
     [SerializeField] float rockHitTime = 2f;
     [SerializeField] HeartsUI heartsUI;
     [SerializeField] PlayerHealth playerHealth;
+    [SerializeField] Sprite[] rockSprites;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -25,6 +26,8 @@ public class Rock : MonoBehaviour
         scoreUI = FindObjectOfType<ScoreUI>();
         heartsUI = FindObjectOfType<HeartsUI>();
         playerHealth = FindObjectOfType<PlayerHealth>();
+        int rockIndex = Random.Range(0, 2);
+        GetComponent<SpriteRenderer>().sprite = rockSprites[rockIndex];
 
     }
 

@@ -123,6 +123,9 @@ MonoBehaviour:
   rockHitTime: 2
   heartsUI: {fileID: 0}
   playerHealth: {fileID: 0}
+  rockSprites:
+  - {fileID: 21300000, guid: 1886e8e95f754a14eaa24d75f7d5d878, type: 3}
+  - {fileID: 21300000, guid: 723bc5d7f33c50a449549eb17e9a941f, type: 3}
 --- !u!50 &-2535637389850085022
 Rigidbody2D:
   serializedVersion: 4

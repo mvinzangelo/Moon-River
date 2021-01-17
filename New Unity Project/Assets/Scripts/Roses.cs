@@ -15,11 +15,14 @@ public class Roses : MonoBehaviour
     [SerializeField] HeartsUI heartsUI;
     [SerializeField] PlayerHealth playerHealth;
     // Start is called before the first frame update
+    [SerializeField] Sprite[] roseSprites;
     void Start()
     {
         scoreUI = FindObjectOfType<ScoreUI>();
         heartsUI = FindObjectOfType<HeartsUI>();
         playerHealth = FindObjectOfType<PlayerHealth>();
+        int roseIndex = Random.Range(0, 2);
+        GetComponent<SpriteRenderer>().sprite = roseSprites[roseIndex];
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

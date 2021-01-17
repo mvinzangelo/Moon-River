@@ -123,6 +123,9 @@ MonoBehaviour:
   roseDuration: 2
   heartsUI: {fileID: 0}
   playerHealth: {fileID: 0}
+  roseSprites:
+  - {fileID: 21300000, guid: 8b2067a8586da4e468ee45890f6943ea, type: 3}
+  - {fileID: 21300000, guid: 481745f9b3c34264a935957fadbfda99, type: 3}
 --- !u!50 &5629744342295334723
 Rigidbody2D:
   serializedVersion: 4
