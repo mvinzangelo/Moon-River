@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8804522589245200006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2809284, y: 0.25169784, z: 1}
+  m_LocalScale: {x: 0.21771951, y: 0.25169784, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,10 +95,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37c2818dd4fd614eb0ee42949a8ce23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chime:
+  - {fileID: 8300000, guid: efb560f9754fe204ab044e85626b8f91, type: 3}
+  - {fileID: 8300000, guid: f7f24f38a2f266349878fe1b8a71314b, type: 3}
+  - {fileID: 8300000, guid: 3c6d008de27f3604ea4adff02fcde3e5, type: 3}
   speed: 2
   MoveLeft: 1
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
   pointValue: 10
+  chimeVolume: 0.2
 --- !u!58 &1819857433
 CircleCollider2D:
   m_ObjectHideFlags: 0
