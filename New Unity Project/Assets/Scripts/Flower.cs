@@ -13,6 +13,7 @@ public class Flower : MonoBehaviour
     [SerializeField] GameObject flowerHitVFX;
     [SerializeField] float flowerDuration = 2f;
     [SerializeField] ScoreUI scoreUI;
+    [SerializeField] Sprite[] sprites;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -37,5 +38,7 @@ public class Flower : MonoBehaviour
     private void Start()
     {
         scoreUI = FindObjectOfType<ScoreUI>();
+        int randomSprite = Random.Range(0, 2);
+        GetComponent<SpriteRenderer>().sprite = sprites[randomSprite];
     }
 }

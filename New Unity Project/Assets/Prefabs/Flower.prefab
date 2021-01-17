@@ -108,6 +108,9 @@ MonoBehaviour:
     type: 3}
   flowerDuration: 2
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: 35a14b652b694dc45a852d47edfbfe61, type: 3}
+  - {fileID: 21300000, guid: 32559dc0f518b2d4395ca447053d8a88, type: 3}
 --- !u!58 &1819857433
 CircleCollider2D:
   m_ObjectHideFlags: 0
