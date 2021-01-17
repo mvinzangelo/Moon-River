@@ -32,6 +32,7 @@ public class CircleEdgeCollider2D : MonoBehaviour
         {
             CreateCircle();
             scoreUI.IncreaseScore(pointValue);
+            Debug.Log("Increase Score");
         }
     }
  
