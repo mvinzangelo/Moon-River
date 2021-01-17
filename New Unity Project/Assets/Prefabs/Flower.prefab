@@ -101,12 +101,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3c6d008de27f3604ea4adff02fcde3e5, type: 3}
   speed: 2
   MoveLeft: 1
-  scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
-  pointValue: 10
+  pointValue: 20
   chimeVolume: 0.2
   flowerHitVFX: {fileID: 4929496167651410418, guid: 952fa9dd0fd6f574ea21c3cb23506d80,
     type: 3}
   flowerDuration: 2
+  scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
 --- !u!58 &1819857433
 CircleCollider2D:
   m_ObjectHideFlags: 0
