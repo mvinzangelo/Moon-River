@@ -95,7 +95,8 @@ MonoBehaviour:
   - {fileID: 8804522589245200006, guid: 649538380933c1e49adc2fb8dce96209, type: 3}
   - {fileID: 257821821965324098, guid: b4fc0a912163677468197888f565cb61, type: 3}
   - {fileID: 8953093830633087984, guid: 79cd2c47f6653d348991f851945126ed, type: 3}
-  spawnDelay: 3
+  spawnDelay: 1.5
+  rockChance: 50
 --- !u!1 &4251565396019081507
 GameObject:
   m_ObjectHideFlags: 0

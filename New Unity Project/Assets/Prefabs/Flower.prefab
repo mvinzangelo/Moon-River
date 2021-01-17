@@ -101,7 +101,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3c6d008de27f3604ea4adff02fcde3e5, type: 3}
   speed: 2
   MoveLeft: 1
-  pointValue: 20
+  pointValue: 10
   chimeVolume: 0.2
   flowerHitVFX: {fileID: 4929496167651410418, guid: 952fa9dd0fd6f574ea21c3cb23506d80,
     type: 3}
@@ -120,6 +120,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.13656828}
   serializedVersion: 2
-  m_Radius: 2.525
+  m_Radius: 1.7188079
