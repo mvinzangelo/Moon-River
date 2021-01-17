@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,19 +20,7 @@ public class PlayerHealth : MonoBehaviour
     { 
         Debug.Log("COLLISION");
 
-        if (collision.gameObject.name == "Rock" || collision.gameObject.name == "Rock(Clone)")
-        {
-            
-            currentHealth -= 1;
-            
-            if (currentHealth < 0)
-            {
-                currentHealth = 0;
-            }
-            Debug.Log("Health: " + currentHealth);
-
-        }
-        else if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
+        if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
             {
                 currentHealth += 1;
                 if (currentHealth > 2)
@@ -45,22 +34,20 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= 1;
 
-            if (currentHealth < 0)
+            if (currentHealth < 1)
             {
                 currentHealth = 0;
+                isDead = true;
+                Debug.Log("MAN IM DEAD");
+                Object.Destroy(gameObject);
             }
             Debug.Log("Health: " + currentHealth);
         }
 
-        if (currentHealth == 0)
+        if (isDead)
         {
-            isDead = true;
-            Debug.Log("MAN IM DEAD");
-            Object.Destroy(gameObject);
+            SceneManager.LoadScene("Game Over");
         }
-
-        
-        
     }
 
     public int GetHealth()
