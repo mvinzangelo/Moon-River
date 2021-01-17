@@ -7,11 +7,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
     public bool isDead = false;
+    [SerializeField] HeartsUI heartsUI; // make sure to re-add commented lines once heart sprites are implemented
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = 3;
         Debug.Log("Health: " + currentHealth);
+        //heartsUI.SetHealthToFull();
     }
 
 
@@ -32,13 +34,13 @@ public class PlayerHealth : MonoBehaviour
                 {
                     currentHealth = 3;
                 }
+            //heartsUI.IncreaseHealth();
                 Debug.Log("Health: " + currentHealth);
 
             }
         else
         {
             currentHealth -= 1;
-
             if (currentHealth < 1)
             {
                 currentHealth = 0;
@@ -46,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("MAN IM DEAD");
                 Object.Destroy(gameObject);
             }
+            //heartsUI.DecreaseHealth();
             Debug.Log("Health: " + currentHealth);
         }
 
