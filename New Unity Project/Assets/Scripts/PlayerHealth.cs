@@ -51,7 +51,11 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-
+    public int GetHealth()
+    {
+        return currentHealth;
+        // USE THIS TO REFERENCE HEALTH IN OTHER SCRIPTS
+    }
     // Update is called once per frame
     void Update()
     {
