@@ -204,6 +204,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &116648049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 28357460201554611, guid: 2ae3647348900ed45b2ba91ce17ba9ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 2017392660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &116648053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116648049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7dbaa6c5b87ce468a157b9725743b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSprites: []
+  healthIndex: 0
 --- !u!224 &513348810 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5212938029148066323, guid: 2ae3647348900ed45b2ba91ce17ba9ed,
@@ -416,20 +436,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 126152188635132646}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1365517648
-MonoBehaviour:
+--- !u!61 &1365517655
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365517647}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce5aa8e6a3a36e48b161475015debba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2.5
-  constantMovemement: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4, y: 2.4}
+    newSize: {x: 2.4, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4, y: 2.4}
+  m_EdgeRadius: 0
 --- !u!1001 &2017392660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -445,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 28357460201554611, guid: 2ae3647348900ed45b2ba91ce17ba9ed,
         type: 3}
       propertyPath: m_TagString
-      value: Obstacles
+      value: MainCamera
       objectReference: {fileID: 0}
     - target: {fileID: 164455190760392639, guid: 2ae3647348900ed45b2ba91ce17ba9ed,
         type: 3}
@@ -619,11 +651,6 @@ PrefabInstance:
     - target: {fileID: 126152189532144688, guid: e1df11bc947413649b76aae4f3af8925,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 126152189532144689, guid: e1df11bc947413649b76aae4f3af8925,
-        type: 3}
-      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 126152189532144690, guid: e1df11bc947413649b76aae4f3af8925,
