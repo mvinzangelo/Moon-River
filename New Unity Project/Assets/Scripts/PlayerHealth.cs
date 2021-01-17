@@ -68,7 +68,7 @@ public class PlayerHealth : MonoBehaviour
         // USE THIS TO REFERENCE HEALTH IN OTHER SCRIPTS
     }
 
-    public bool playerDead()
+    public bool PlayerDead()
     {
         return isDead;
     }
