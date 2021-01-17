@@ -99,9 +99,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.036020655}
+  m_Offset: {x: 0, y: -0.014063236}
   serializedVersion: 2
-  m_Radius: 2.4890835
+  m_Radius: 1.1371741
 --- !u!114 &257821821965324126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   damageVolume: 1
   pointValue: -20
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
-  speed: 2
+  speed: 1.25
   MoveLeft: 1
   rockHitVFX: {fileID: 1800580369225892173, guid: a32e472dd025c0141aad9e04acc5f756,
     type: 3}
