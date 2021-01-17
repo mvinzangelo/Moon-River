@@ -17,6 +17,7 @@ public class StartingScene : MonoBehaviour
     bool move = false;
     bool secondMove = false;
     bool thirdMove = false;
+    [SerializeField] LoadNextScene loadNext;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +61,7 @@ public class StartingScene : MonoBehaviour
     public void MoveTextBoxes()
     {
         move = true;
+        loadNext.StartLoadingNextScene();
     }
     
 }

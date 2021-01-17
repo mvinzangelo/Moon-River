@@ -29,12 +29,10 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.gameObject.tag == "Rose")
             {
+            if (currentHealth < 3)
+            {
                 currentHealth += 1;
-                if (currentHealth > 2)
-                {
-                    currentHealth = 3;
-                }
-            //heartsUI.IncreaseHealth();
+            }
                 Debug.Log("Health: " + currentHealth);
 
             }
@@ -48,7 +46,6 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("MAN IM DEAD");
                 Object.Destroy(gameObject);
             }
-            //heartsUI.DecreaseHealth();
             Debug.Log("Health: " + currentHealth);
         }
 
