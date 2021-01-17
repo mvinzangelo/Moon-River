@@ -216,8 +216,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5939057904525809430, guid: cc4acdcbc3a631749a90d78c8042506c,
         type: 3}
+      propertyPath: goToStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939057904525809430, guid: cc4acdcbc3a631749a90d78c8042506c,
+        type: 3}
       propertyPath: loadingTime
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5939057904525809430, guid: cc4acdcbc3a631749a90d78c8042506c,
         type: 3}
@@ -390,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 5664057522322284988, guid: 1383b74d9a606bb45a0ae7d0539a671e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.85
+      value: -10.97
       objectReference: {fileID: 0}
     - target: {fileID: 5664057522322284988, guid: 1383b74d9a606bb45a0ae7d0539a671e,
         type: 3}
@@ -527,6 +532,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1401820242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5939057904525809430, guid: cc4acdcbc3a631749a90d78c8042506c,
+    type: 3}
+  m_PrefabInstance: {fileID: 520921078}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bd2652617c2ac4c96c070108dcee90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1448875354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -731,6 +748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Random Enemy Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099673927053716637, guid: c8152cff8e8b0d94d9cd631318c5e112,
+        type: 3}
+      propertyPath: startSpawnDelay
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8152cff8e8b0d94d9cd631318c5e112, type: 3}
@@ -1120,6 +1142,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1621367082881941542, guid: c61fdbee5ab336940a694648a155fe02,
+        type: 3}
+      propertyPath: loadNext
+      value: 
+      objectReference: {fileID: 1401820242}
     - target: {fileID: 1621367082881941542, guid: c61fdbee5ab336940a694648a155fe02,
         type: 3}
       propertyPath: randomSpawner

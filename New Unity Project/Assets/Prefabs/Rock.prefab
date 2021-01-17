@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 257821821965324124}
   - component: {fileID: 257821821965324099}
   - component: {fileID: 257821821965324126}
-  - component: {fileID: 422872362135661771}
-  - component: {fileID: 2477632705313665552}
-  - component: {fileID: 8355379656292316230}
+  - component: {fileID: -2535637389850085022}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Obstacles
@@ -124,7 +122,8 @@ MonoBehaviour:
     type: 3}
   rockHitTime: 2
   heartsUI: {fileID: 0}
---- !u!50 &422872362135661771
+  playerHealth: {fileID: 0}
+--- !u!50 &-2535637389850085022
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -132,81 +131,16 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257821821965324098}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &2477632705313665552
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257821821965324098}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0, y: 3}
-  - {x: 0.585271, y: 2.9423556}
-  - {x: 1.1480503, y: 2.7716384}
-  - {x: 1.6667107, y: 2.4944088}
-  - {x: 2.1213202, y: 2.1213202}
-  - {x: 2.494409, y: 1.6667106}
-  - {x: 2.7716384, y: 1.1480503}
-  - {x: 2.9423559, y: 0.5852707}
-  - {x: 3, y: -0.00000013113416}
-  - {x: 2.9423556, y: -0.585271}
-  - {x: 2.7716384, y: -1.1480505}
-  - {x: 2.4944086, y: -1.6667111}
-  - {x: 2.1213202, y: -2.1213202}
-  - {x: 1.6667106, y: -2.494409}
-  - {x: 1.1480498, y: -2.7716389}
-  - {x: 0.58527094, y: -2.9423559}
-  - {x: -0.00000026226832, y: -3}
-  - {x: -0.5852715, y: -2.9423556}
-  - {x: -1.1480503, y: -2.7716384}
-  - {x: -1.6667109, y: -2.4944086}
-  - {x: -2.1213207, y: -2.12132}
-  - {x: -2.4944093, y: -1.66671}
-  - {x: -2.771639, y: -1.1480494}
-  - {x: -2.9423556, y: -0.5852711}
-  - {x: -3, y: 0.00000003577464}
-  - {x: -2.9423556, y: 0.58527124}
-  - {x: -2.7716384, y: 1.1480508}
-  - {x: -2.4944084, y: 1.6667113}
-  - {x: -2.1213195, y: 2.121321}
-  - {x: -1.6667109, y: 2.4944088}
-  - {x: -1.1480503, y: 2.7716386}
-  - {x: -0.5852707, y: 2.9423559}
-  - {x: 0.00000052453663, y: 3}
---- !u!114 &8355379656292316230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257821821965324098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac406c237dfffda479153100afb8c6b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Radius: 3
-  NumPoints: 32
-  scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
-  pointValue: 10

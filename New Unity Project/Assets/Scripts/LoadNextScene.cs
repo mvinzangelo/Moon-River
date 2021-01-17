@@ -6,10 +6,19 @@ public class LoadNextScene : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
     [SerializeField] float loadingTime = 120f;
+    [SerializeField] bool goToStart = false;
     // Start is called before the first frame update
     public void StartLoadingNextScene()
     {
-        StartCoroutine(Loading());
+        if (goToStart)
+        {
+            StartCoroutine(LoadToStart());
+        }
+        else
+        {
+            StartCoroutine(Loading());
+        }
+
     }
 
     IEnumerator Loading()
@@ -17,5 +26,11 @@ public class LoadNextScene : MonoBehaviour
         Debug.Log("START LOAD");
         yield return new WaitForSecondsRealtime(loadingTime);
         sceneLoader.LoadNextScene();
+    }
+    IEnumerator LoadToStart()
+    {
+        Debug.Log("START LOAD START");
+        yield return new WaitForSecondsRealtime(loadingTime);
+        sceneLoader.LoadStartScene();
     }
 }
