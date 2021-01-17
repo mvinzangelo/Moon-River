@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         // If health is 0, set isDead to true. 
         // If isDead is true, go to the Game Over scene.
 
-        if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
+        if (collision.gameObject.tag == "Rose")
             {
                 currentHealth += 1;
                 if (currentHealth > 2)
@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("Health: " + currentHealth);
 
             }
-        else
+        else if (collision.gameObject.tag == "Obstacles")
         {
             currentHealth -= 1;
             if (currentHealth < 1)
