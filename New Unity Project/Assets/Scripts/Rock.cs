@@ -10,6 +10,8 @@ public class Rock : MonoBehaviour
     [SerializeField] ScoreUI scoreUI;
     public float speed;
     public bool MoveLeft;
+    [SerializeField] GameObject rockHitVFX;
+    [SerializeField] float rockHitTime = 2f;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,6 +24,8 @@ public class Rock : MonoBehaviour
     {
         scoreUI.DecreaseScore(pointValue);
         Destroy(gameObject);
+        GameObject rockVFX = Instantiate(rockHitVFX, transform.position, transform.rotation);
+        Destroy(rockVFX, rockHitTime);
     }
 
     private void Update()

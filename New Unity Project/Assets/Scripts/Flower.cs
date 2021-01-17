@@ -11,6 +11,8 @@ public class Flower : MonoBehaviour
     [SerializeField] ScoreUI scoreUI;
     [SerializeField] int pointValue = 10;
     [SerializeField] float chimeVolume = 0.2f;
+    [SerializeField] GameObject flowerHitVFX;
+    [SerializeField] float flowerDuration = 2f;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -24,6 +26,8 @@ public class Flower : MonoBehaviour
         
         scoreUI.IncreaseScore(pointValue);
         Destroy(gameObject);
+        GameObject flowerVFX = Instantiate(flowerHitVFX, transform.position, Quaternion.Euler(-179, 89, -90));
+        Destroy(flowerVFX, flowerDuration);
     }
 
     private void Update()
