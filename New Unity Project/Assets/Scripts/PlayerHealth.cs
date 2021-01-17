@@ -20,6 +20,11 @@ public class PlayerHealth : MonoBehaviour
     { 
         Debug.Log("COLLISION");
 
+        // Check if collided with flower. If so, add 1 to current health, capped at 3.
+        // If collided with anything else, subtract 1 to current health, capped to 0.
+        // If health is 0, set isDead to true. 
+        // If isDead is true, go to the Game Over scene.
+
         if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
             {
                 currentHealth += 1;
