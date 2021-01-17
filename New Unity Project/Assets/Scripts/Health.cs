@@ -18,24 +18,25 @@ public class Health
         return health;
     }
 
-    public void Damage(int damageAmount)
+    public int Damage(int damageAmount)
     {
         health -= damageAmount;
-        HeartsUI.DecreaseHealth();
+        //HeartsUI.DecreaseHealth();
         if (health < 0)
         {
             health = 0;
         }
+        return health;
     }
 
-    public void Heal(int healAmount)
+    public int Heal(int healAmount)
     {
         health += healAmount;
-        HeartsUI.IncreaseHealth();
+        //HeartsUI.IncreaseHealth();
         if (health > healthMax)
         {
             health = healthMax;
         }
-        
+        return health;
     }
 }
