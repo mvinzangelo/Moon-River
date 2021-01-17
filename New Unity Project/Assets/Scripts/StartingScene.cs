@@ -10,7 +10,13 @@ public class StartingScene : MonoBehaviour
     [SerializeField] Camera MainCam;
     [SerializeField] float textMoveSpeed = 2f;
     [SerializeField] float cameraMoveSpeed = 2f;
+    [SerializeField] HeartsUI healthUI;
+    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] float scoreMoveSpeed = 2f;
+    [SerializeField] float healthMoveSpeed = 2f;
     bool move = false;
+    bool secondMove = false;
+    bool thirdMove = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +34,26 @@ public class StartingScene : MonoBehaviour
             if (MainCam.transform.position.y <= 0)
             {
                 move = false;
+                secondMove = true;
+                thirdMove = true;
+            }
+        }
+        if (secondMove == true)
+        {
+            healthUI.transform.Translate(0, -healthMoveSpeed * Time.deltaTime, 0);
+            if (healthUI.transform.position.y <= 960)
+            {
+                Debug.Log("False2");
+                secondMove = false;
+            }
+        }
+        if (thirdMove == true)
+        {
+            scoreText.transform.Translate(0, -scoreMoveSpeed * Time.deltaTime, 0);
+            if (healthUI.transform.position.y <= 960)
+            {
+                Debug.Log("FALSE");
+                thirdMove = false;
             }
         }
 
