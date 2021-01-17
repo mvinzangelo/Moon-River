@@ -8,11 +8,11 @@ public class Flower : MonoBehaviour
     [SerializeField] AudioClip[] chime;
     public float speed;
     public bool MoveLeft;
-    [SerializeField] ScoreUI scoreUI;
     [SerializeField] int pointValue = 10;
     [SerializeField] float chimeVolume = 0.2f;
     [SerializeField] GameObject flowerHitVFX;
     [SerializeField] float flowerDuration = 2f;
+    [SerializeField] ScoreUI scoreUI;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,7 +23,6 @@ public class Flower : MonoBehaviour
 
     private void DestroyFlower()
     {
-        
         scoreUI.IncreaseScore(pointValue);
         Destroy(gameObject);
         GameObject flowerVFX = Instantiate(flowerHitVFX, transform.position, Quaternion.Euler(-179, 89, -90));
@@ -32,8 +31,11 @@ public class Flower : MonoBehaviour
 
     private void Update()
     {
-        {
-            transform.Translate(-2 * Time.deltaTime * speed, 0, 0);
-        }
+        transform.Translate(-2 * Time.deltaTime * speed, 0, 0);
+    }
+
+    private void Start()
+    {
+        scoreUI = FindObjectOfType<ScoreUI>();
     }
 }

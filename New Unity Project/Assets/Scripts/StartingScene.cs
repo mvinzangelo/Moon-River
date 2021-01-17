@@ -43,7 +43,6 @@ public class StartingScene : MonoBehaviour
             healthUI.transform.Translate(0, -healthMoveSpeed * Time.deltaTime, 0);
             if (healthUI.transform.position.y <= 960)
             {
-                Debug.Log("False2");
                 secondMove = false;
             }
         }
@@ -52,7 +51,6 @@ public class StartingScene : MonoBehaviour
             scoreText.transform.Translate(0, -scoreMoveSpeed * Time.deltaTime, 0);
             if (healthUI.transform.position.y <= 960)
             {
-                Debug.Log("FALSE");
                 thirdMove = false;
             }
         }
