@@ -111,5 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa16249dcef1ac49ac3d491284a0bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage:
+  - {fileID: 8300000, guid: 054e9fe8e962cdf4c8f270c17c215d08, type: 3}
+  - {fileID: 8300000, guid: 4ab5a94773203de49a2fb9b54bb8255b, type: 3}
+  damageVolume: 0.2
+  pointValue: -20
+  scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
   speed: 2
   MoveLeft: 1
