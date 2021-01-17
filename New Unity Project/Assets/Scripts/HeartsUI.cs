@@ -35,5 +35,4 @@ public class HeartsUI : MonoBehaviour
         healthIndex -= 1;
         GetComponent<Image>().sprite = healthSprites[healthIndex];
     }
-
 }

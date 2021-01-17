@@ -9,5 +9,6 @@ public class Shredder : MonoBehaviour
     {
         // destroy the whole game object
         Destroy(collision.gameObject);
+        Debug.Log("COLLIDE");
     }
 }
