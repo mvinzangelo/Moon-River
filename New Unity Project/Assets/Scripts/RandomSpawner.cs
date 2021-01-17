@@ -20,7 +20,7 @@ public class RandomSpawner : MonoBehaviour
         int randEnemy = Random.Range(0, 100);
         int randSpawnPoint = Random.Range(0, spawnPoints.Length);
         int randomSpawn = Random.Range(0, enemyPrefabs.Length);
-        int flipCoin = Random.Range(0, 1);
+        int flipCoin = Random.Range(0, 2);
         //Instantiate(enemyPrefabs[randomSpawn], spawnPoints[randSpawnPoint].position, transform.rotation);
         if (randEnemy >= 1 && randEnemy <= rockChance)
         {
