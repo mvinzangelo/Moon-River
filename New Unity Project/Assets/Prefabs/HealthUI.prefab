@@ -88,8 +88,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSprites:
-  - {fileID: 21300000, guid: 2fe6480b57a9cf4479e80cad3079aa35, type: 3}
-  - {fileID: 21300000, guid: baedbbec6709c0444863b20bb4a4484e, type: 3}
-  - {fileID: 21300000, guid: 2996a2c57d1174d42a1f7808f54db042, type: 3}
-  - {fileID: 21300000, guid: 57e7e5a4d89580848943c022981287a1, type: 3}
+  - {fileID: 21300000, guid: bfd5d34595af0104ca74a9befe7d55b0, type: 3}
+  - {fileID: 21300000, guid: b0c878d69744fd34c84450ea0da7eb6b, type: 3}
+  - {fileID: 21300000, guid: defcfb79dc486c645bc723d915dd3fec, type: 3}
+  - {fileID: 21300000, guid: ecbe6fa72260c9a41beafb5fab41c616, type: 3}
   healthIndex: 0
