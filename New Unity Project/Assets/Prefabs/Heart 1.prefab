@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal: {fileID: 8300000, guid: 9ece6e9f1ff808f408b811fd59847b6c, type: 3}
-  speed: 3
+  speed: 1.6
   MoveLeft: 1
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
   pointValue: 10
