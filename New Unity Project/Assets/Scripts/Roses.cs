@@ -8,14 +8,18 @@ public class Roses : MonoBehaviour
     public float speed;
     public bool MoveLeft;
     [SerializeField] ScoreUI scoreUI;
-    [SerializeField] int pointValue = 10;
+    [SerializeField] int pointValue = 20;
     [SerializeField] float healVolume = 0.2f;
     [SerializeField] GameObject roseHitVFX;
     [SerializeField] float roseDuration = 2f;
+    [SerializeField] HeartsUI heartsUI;
+    [SerializeField] PlayerHealth playerHealth;
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreUI = FindObjectOfType<ScoreUI>();
+        heartsUI = FindObjectOfType<HeartsUI>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -26,6 +30,10 @@ public class Roses : MonoBehaviour
 
     private void DestroyRose()
     {
+        if (playerHealth.GetHealth() < 3)
+        {
+            heartsUI.IncreaseHealth();
+        }
         scoreUI.IncreaseScore(pointValue);
         Destroy(gameObject);
         GameObject flowerVFX = Instantiate(roseHitVFX, transform.position, Quaternion.Euler(-179, 89, -90));
