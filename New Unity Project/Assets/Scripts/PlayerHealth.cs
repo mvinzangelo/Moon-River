@@ -5,30 +5,41 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
-    Rock rock;
+    public bool isDead = false;
     // Start is called before the first frame update
     void Start()
     {
-        Health health = new Health(3);
-        currentHealth = health.GetHealth();
+        currentHealth = 3;
         Debug.Log("Health: " + currentHealth);
     }
 
-    
-    private void OnCollisionEnter2D(Collision2D collision)
+
+
+    void OnCollisionEnter2D(Collision2D collision)
     { 
         Debug.Log("COLLISION");
 
         if (collision.gameObject.name == "Rock")
         {
+            
             currentHealth -= 1;
             Debug.Log("Health: " + currentHealth);
+            if (currentHealth < 1)
+            {
+                currentHealth = 0;
+                isDead = true;
+            }
+            
         }
 
         if (collision.gameObject.name == "Flower")
         {
             currentHealth += 1;
-            Debug.Log("Health: " + currentHealth); 
+            Debug.Log("Health: " + currentHealth);
+            if (currentHealth > 3)
+            {
+                currentHealth = 3;
+            }
         }
     }
     // Update is called once per frame
