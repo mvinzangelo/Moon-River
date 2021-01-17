@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class FadeInFadeOut : MonoBehaviour
 {
-    // can ignore the update, it's just to make the coroutines get called for example
-    void Update()
+    public void FadeOutBlack()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<Image>()));
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            StartCoroutine(FadeTextToZeroAlpha(1f, GetComponent<Image>()));
-        }
+        StartCoroutine(FadeTextToZeroAlpha(1f, GetComponent<Image>()));
+    }
+    public void FadeInBlack()
+    {
+        StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<Image>()));
     }
 
 

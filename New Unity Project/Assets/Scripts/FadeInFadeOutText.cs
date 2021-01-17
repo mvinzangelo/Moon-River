@@ -10,15 +10,22 @@ public class FadeInFadeOutText : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<Text>()));
+            TextStart();
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(FadeTextToZeroAlpha(1f, GetComponent<Text>()));
+            TextEnd();
         }
     }
+    public void TextStart()
+    {
+        StartCoroutine(FadeTextToFullAlpha(1f, GetComponent<Text>()));
+    }
 
-
+    public void TextEnd()
+    {
+        StartCoroutine(FadeTextToZeroAlpha(1f, GetComponent<Text>()));
+    }
 
     public IEnumerator FadeTextToFullAlpha(float t, Text i)
     {
