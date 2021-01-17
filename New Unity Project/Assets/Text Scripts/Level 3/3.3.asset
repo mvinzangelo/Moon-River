@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBoxText: The waters now overflowing with droves of blushing petals, resembling
     the shine of blazing constellations, highlighting the path back to her beloved.
-  timeSinceLoad: 0
-  textDuration: 0
+  timeSinceLoad: 40
+  textDuration: 7

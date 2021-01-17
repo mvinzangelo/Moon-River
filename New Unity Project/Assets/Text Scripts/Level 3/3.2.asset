@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBoxText: "Her long journey across what seemed like insurmountable barriers
     was finally coming to an end\r."
-  timeSinceLoad: 0
-  textDuration: 0
+  timeSinceLoad: 30
+  textDuration: 7

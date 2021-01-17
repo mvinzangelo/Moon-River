@@ -15,5 +15,5 @@ MonoBehaviour:
   textBoxText: "As their soul\u2019s reunited in the snare of a warm embrace, throughout
     the entire world could be felt the overwhelming ardor of a mother\u2019s unbreakable
     love for her son\r."
-  timeSinceLoad: 0
-  textDuration: 0
+  timeSinceLoad: 50
+  textDuration: 7

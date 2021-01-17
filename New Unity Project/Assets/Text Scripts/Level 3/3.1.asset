@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBoxText: "After all the trials she had endured, those once perilous waves no
     longer aimed to befall her, rather they rejoiced in hymns of humble praise\r."
-  timeSinceLoad: 0
-  textDuration: 0
+  timeSinceLoad: 20
+  textDuration: 7

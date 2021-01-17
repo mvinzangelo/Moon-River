@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 257821821965324124}
   - component: {fileID: 257821821965324099}
   - component: {fileID: 257821821965324126}
-  - component: {fileID: -2535637389850085022}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Obstacles
@@ -126,24 +125,3 @@ MonoBehaviour:
   rockSprites:
   - {fileID: 21300000, guid: 1886e8e95f754a14eaa24d75f7d5d878, type: 3}
   - {fileID: 21300000, guid: 723bc5d7f33c50a449549eb17e9a941f, type: 3}
---- !u!50 &-2535637389850085022
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257821821965324098}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
