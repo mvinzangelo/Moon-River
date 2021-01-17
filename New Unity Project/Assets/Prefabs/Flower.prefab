@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1819857433}
   m_Layer: 0
   m_Name: Flower
-  m_TagString: Untagged
+  m_TagString: HealItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   MoveLeft: 1
+  scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
+  pointValue: 10
 --- !u!58 &1819857433
 CircleCollider2D:
   m_ObjectHideFlags: 0
