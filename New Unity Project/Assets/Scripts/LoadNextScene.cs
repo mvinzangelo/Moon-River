@@ -23,13 +23,11 @@ public class LoadNextScene : MonoBehaviour
 
     IEnumerator Loading()
     {
-        Debug.Log("START LOAD");
         yield return new WaitForSecondsRealtime(loadingTime);
         sceneLoader.LoadNextScene();
     }
     IEnumerator LoadToStart()
     {
-        Debug.Log("START LOAD START");
         yield return new WaitForSecondsRealtime(loadingTime);
         sceneLoader.LoadStartScene();
     }

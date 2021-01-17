@@ -8,8 +8,9 @@ public class StartNewScene : MonoBehaviour
     [SerializeField] LoadNextScene loadNext;
     void Start()
     {
-        randomSpawner.StartSpawning();
         loadNext.StartLoadingNextScene();
+        randomSpawner.StartSpawning();
+        
     }
 
     // Update is called once per frame

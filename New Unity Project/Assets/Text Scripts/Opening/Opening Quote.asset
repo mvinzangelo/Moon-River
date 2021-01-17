@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db7411ab3f2d704f8d520a07e7ddf43, type: 3}
+  m_Name: Opening Quote
+  m_EditorClassIdentifier: 
+  textBoxText: "\"Tell me the story of the moon, and the boundless love which she
+    extended towards the sun. Explain to me the very feeling which drove her to travel
+    across the world every night just to see him smile.\r\"\n"
+  timeSinceLoad: 1
+  textDuration: 12

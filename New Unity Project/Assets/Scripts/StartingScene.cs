@@ -18,10 +18,12 @@ public class StartingScene : MonoBehaviour
     bool secondMove = false;
     bool thirdMove = false;
     [SerializeField] LoadNextScene loadNext;
+    [SerializeField] FadeInFadeOut fade;
     // Start is called before the first frame update
     void Start()
     {
-        
+        fade.FadeOutBlack();
+        Destroy(fade.gameObject, 2f);
     }
 
     // Update is called once per frame
