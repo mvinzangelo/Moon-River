@@ -19,29 +19,39 @@ public class PlayerHealth : MonoBehaviour
     { 
         Debug.Log("COLLISION");
 
-        if (collision.gameObject.name == "Rock")
+        if (collision.gameObject.name == "Rock" || collision.gameObject.name == "Rock(Clone)")
         {
             
             currentHealth -= 1;
-            Debug.Log("Health: " + currentHealth);
-            if (currentHealth < 1)
+            
+            if (currentHealth < 0)
             {
                 currentHealth = 0;
-                isDead = true;
             }
-            
+            Debug.Log("Health: " + currentHealth);
+
+        }
+        
+        if (currentHealth == 0)
+        {
+            isDead = true;
+            Debug.Log("MAN IM DEAD");
         }
 
-        if (collision.gameObject.name == "Flower")
+        if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
         {
             currentHealth += 1;
-            Debug.Log("Health: " + currentHealth);
-            if (currentHealth > 3)
+            if (currentHealth > 2)
             {
                 currentHealth = 3;
             }
+            Debug.Log("Health: " + currentHealth);
+            
         }
+        
     }
+
+
     // Update is called once per frame
     void Update()
     {
