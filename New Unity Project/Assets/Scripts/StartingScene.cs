@@ -19,11 +19,12 @@ public class StartingScene : MonoBehaviour
     bool thirdMove = false;
     [SerializeField] LoadNextScene loadNext;
     [SerializeField] FadeInFadeOut fade;
+    private bool fadeInFlag = true;
     // Start is called before the first frame update
     void Start()
     {
+        fadeInFlag = true;
         fade.FadeOutBlack();
-        Destroy(fade.gameObject, 2f);
     }
 
     // Update is called once per frame
@@ -56,6 +57,11 @@ public class StartingScene : MonoBehaviour
             {
                 thirdMove = false;
             }
+        }
+        if (Time.timeSinceLevelLoad >= 60 && fadeInFlag)
+        {
+            fade.FadeInBlack();
+            fadeInFlag = false;
         }
 
     }

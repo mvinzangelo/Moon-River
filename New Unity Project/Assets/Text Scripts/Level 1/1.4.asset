@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1.4
   m_EditorClassIdentifier: 
   textBoxText: "Even as the darkness of night lingered in the forefronts of the mother\u2019s
-    vision, those same blossoms worked tirelessly to lead her towards dawn"
+    vision, those same blossoms worked tirelessly to lead her towards dawn."
   timeSinceLoad: 50
   textDuration: 7

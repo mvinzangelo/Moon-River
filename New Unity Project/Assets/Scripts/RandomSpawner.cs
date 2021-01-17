@@ -32,17 +32,20 @@ public class RandomSpawner : MonoBehaviour
         //Instantiate(enemyPrefabs[randomSpawn], spawnPoints[randSpawnPoint].position, transform.rotation);
         if (randEnemy >= 1 && randEnemy <= rockChance)
         {
-            Instantiate(enemyPrefabs[1], spawnPoints[randSpawnPoint].position, transform.rotation);
+            GameObject enemy = Instantiate(enemyPrefabs[1], spawnPoints[randSpawnPoint].position, transform.rotation);
+            Destroy(enemy, 20f);
         }
         else 
         {
             if (flipCoin == 0)
             {
-                Instantiate(enemyPrefabs[0], spawnPoints[randSpawnPoint].position, transform.rotation);
+                GameObject enemy = Instantiate(enemyPrefabs[0], spawnPoints[randSpawnPoint].position, transform.rotation);
+                Destroy(enemy, 20f);
             }
             else
             {
-                Instantiate(enemyPrefabs[2], spawnPoints[randSpawnPoint].position, transform.rotation);
+                GameObject enemy = Instantiate(enemyPrefabs[2], spawnPoints[randSpawnPoint].position, transform.rotation);
+                Destroy(enemy, 20f);
             }
         }
         yield return new WaitForSeconds(spawnDelay);

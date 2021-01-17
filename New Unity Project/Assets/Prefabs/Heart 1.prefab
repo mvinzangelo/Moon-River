@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4337846851350330159}
   - component: {fileID: 9035702990074234909}
   - component: {fileID: -3670397917291726565}
-  - component: {fileID: 5629744342295334723}
   m_Layer: 0
   m_Name: Heart 1
   m_TagString: Rose
@@ -126,24 +125,3 @@ MonoBehaviour:
   roseSprites:
   - {fileID: 21300000, guid: 8b2067a8586da4e468ee45890f6943ea, type: 3}
   - {fileID: 21300000, guid: 481745f9b3c34264a935957fadbfda99, type: 3}
---- !u!50 &5629744342295334723
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8953093830633087984}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

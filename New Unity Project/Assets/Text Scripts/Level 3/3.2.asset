@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5db7411ab3f2d704f8d520a07e7ddf43, type: 3}
-  m_Name: 1.T
+  m_Name: 3.2
   m_EditorClassIdentifier: 
-  textBoxText: "\"Would the mother\u2019s journey end at dawn?\""
-  timeSinceLoad: 1
-  textDuration: 4
+  textBoxText: "Her long journey across what seemed like insurmountable barriers
+    was finally coming to an end\r."
+  timeSinceLoad: 30
+  textDuration: 7

@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/A. Scenes/Start (Midnight).unity
     guid: d708bee05fad04c4c824cd53af3a308f
   - enabled: 1
+    path: Assets/Scenes/A. Scenes/Transition 1.T.unity
+    guid: 3688725aec0bbeb4cbada8f2d2dcdab5
+  - enabled: 1
     path: Assets/Scenes/A. Scenes/Level 2 (Twilight).unity
     guid: 7cca52f0949ce1f4f9c3546083df7228
   - enabled: 1
+    path: Assets/Scenes/A. Scenes/Transition 2.T.unity
+    guid: fffab681d2dda8949b281d6501da58cb
+  - enabled: 1
     path: Assets/Scenes/A. Scenes/Level 3 (Morning).unity
     guid: 481c3c7f96b29c841b373f671165e1ab
+  - enabled: 1
+    path: Assets/Scenes/A. Scenes/Final Scene.unity
+    guid: 39771d4855a1cc64abf5c597decb8ae2
   m_configObjects: {}
