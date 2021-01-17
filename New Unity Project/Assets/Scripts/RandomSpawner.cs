@@ -8,11 +8,19 @@ public class RandomSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public GameObject[] enemyPrefabs;
     [SerializeField] float spawnDelay = 3f;
+    [SerializeField] float startSpawnDelay = 15f;
     // Start is called before the first frame update
     public void StartSpawning()
     {
+        StartCoroutine(StartSpawn());
+    }
+
+     IEnumerator StartSpawn()
+    {
+        yield return new WaitForSecondsRealtime(startSpawnDelay);
         StartCoroutine(SpawnRandomEnemy());
     }
+
     IEnumerator SpawnRandomEnemy()
     {
         int randEnemy = Random.Range(0, enemyPrefabs.Length);
