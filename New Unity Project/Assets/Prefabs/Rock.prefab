@@ -116,7 +116,7 @@ MonoBehaviour:
   damageVolume: 1
   pointValue: 20
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
-  speed: 2
+  speed: 1.5
   MoveLeft: 1
   rockHitVFX: {fileID: 1800580369225892173, guid: a32e472dd025c0141aad9e04acc5f756,
     type: 3}

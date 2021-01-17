@@ -100,7 +100,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: efb560f9754fe204ab044e85626b8f91, type: 3}
   - {fileID: 8300000, guid: 8d454d4507c0c4d4f8e7ed820dc35fc7, type: 3}
   - {fileID: 8300000, guid: 3c6d008de27f3604ea4adff02fcde3e5, type: 3}
-  speed: 2
+  speed: 1.6
   MoveLeft: 1
   pointValue: 10
   chimeVolume: 0.2
