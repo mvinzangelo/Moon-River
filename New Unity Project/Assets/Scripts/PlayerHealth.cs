@@ -31,23 +31,34 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Health: " + currentHealth);
 
         }
-        
+        else if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
+            {
+                currentHealth += 1;
+                if (currentHealth > 2)
+                {
+                    currentHealth = 3;
+                }
+                Debug.Log("Health: " + currentHealth);
+
+            }
+        else
+        {
+            currentHealth -= 1;
+
+            if (currentHealth < 0)
+            {
+                currentHealth = 0;
+            }
+            Debug.Log("Health: " + currentHealth);
+        }
+
         if (currentHealth == 0)
         {
             isDead = true;
             Debug.Log("MAN IM DEAD");
         }
 
-        if (collision.gameObject.name == "Flower" || collision.gameObject.name == "Flower(Clone)")
-        {
-            currentHealth += 1;
-            if (currentHealth > 2)
-            {
-                currentHealth = 3;
-            }
-            Debug.Log("Health: " + currentHealth);
-            
-        }
+        
         
     }
 
@@ -55,6 +66,11 @@ public class PlayerHealth : MonoBehaviour
     {
         return currentHealth;
         // USE THIS TO REFERENCE HEALTH IN OTHER SCRIPTS
+    }
+
+    public bool playerDead()
+    {
+        return isDead;
     }
     // Update is called once per frame
     void Update()
