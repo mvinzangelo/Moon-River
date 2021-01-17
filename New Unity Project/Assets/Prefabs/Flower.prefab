@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2649df03439754546a79e4bc9657e0cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32559dc0f518b2d4395ca447053d8a88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,6 +104,9 @@ MonoBehaviour:
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
   pointValue: 10
   chimeVolume: 0.2
+  flowerHitVFX: {fileID: 4929496167651410418, guid: 952fa9dd0fd6f574ea21c3cb23506d80,
+    type: 3}
+  flowerDuration: 2
 --- !u!58 &1819857433
 CircleCollider2D:
   m_ObjectHideFlags: 0
