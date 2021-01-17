@@ -43,3 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b42dedf06aee446a85d9884d0a6cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleText: {fileID: 0}
+  playButtonText: {fileID: 0}
+  MainCam: {fileID: 0}
+  textMoveSpeed: 231.94
+  cameraMoveSpeed: 0.8
+  healthUI: {fileID: 0}
+  scoreText: {fileID: 0}
+  scoreMoveSpeed: 100
+  healthMoveSpeed: 100
