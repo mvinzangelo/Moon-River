@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 98819e61e29e7ea499c440a26b4fdda8, type: 2}
   m_sharedMaterial: {fileID: -5755940307563002426, guid: 98819e61e29e7ea499c440a26b4fdda8,
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8421bb7540ffb054fa853df5399d7072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScore: 18330

@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: {fileID: 8300000, guid: db86459d35d211a479dab9109c0477ee, type: 3}
-  damageVolume: 0.7
+  damageVolume: 1
   pointValue: -20
   scoreUI: {fileID: 4667252457862287091, guid: 154502eabcab85f44a7fdca201c763a7, type: 3}
   speed: 2
