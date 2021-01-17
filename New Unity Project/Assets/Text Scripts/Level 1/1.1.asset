@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1.1
   m_EditorClassIdentifier: 
   textBoxText: Once upon a time, in a forgotten age, there lived a mother whose unparalleled
-    love for her son overcame all obstacles
+    love for her son overcame all obstacles.
   timeSinceLoad: 20
   textDuration: 7

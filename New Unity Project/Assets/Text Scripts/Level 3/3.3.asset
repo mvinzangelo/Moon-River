@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5db7411ab3f2d704f8d520a07e7ddf43, type: 3}
-  m_Name: 1.T
+  m_Name: 3.3
   m_EditorClassIdentifier: 
-  textBoxText: "\"Would the mother\u2019s journey end at dawn?\""
-  timeSinceLoad: 1
-  textDuration: 4
+  textBoxText: The waters now overflowing with droves of blushing petals, resembling
+    the shine of blazing constellations, highlighting the path back to her beloved.
+  timeSinceLoad: 0
+  textDuration: 0

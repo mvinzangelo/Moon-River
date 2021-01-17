@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1.2
   m_EditorClassIdentifier: 
   textBoxText: She would begin her journey every night through seas whose currents
-    stood unconquered by man
+    stood unconquered by man.
   timeSinceLoad: 30
   textDuration: 7

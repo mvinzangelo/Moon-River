@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7462163767724996777}
   - component: {fileID: 8178623963374416983}
+  - component: {fileID: 536711432}
   m_Layer: 0
   m_Name: RunningWater
   m_TagString: Untagged
@@ -42,10 +43,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6d9e3985aebebdd428c3480d25ca5e47, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.264
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -127,3 +128,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &536711432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925453027712915823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec185d10bad20e54b8734968535207e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
