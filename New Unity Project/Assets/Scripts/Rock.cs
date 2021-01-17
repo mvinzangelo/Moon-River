@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rock : MonoBehaviour
 {
-    [SerializeField] AudioClip[] damage;
+    [SerializeField] AudioClip damage;
     [SerializeField] float damageVolume = .2f;
     [SerializeField] int pointValue = -20;
     [SerializeField] ScoreUI scoreUI;
@@ -14,8 +14,7 @@ public class Rock : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         DestroyRock();
-        int randomDamage = Random.Range(0, damage.Length);
-        AudioSource.PlayClipAtPoint(damage[randomDamage], Camera.main.transform.position, damageVolume);
+        AudioSource.PlayClipAtPoint(damage, Camera.main.transform.position, damageVolume);
 
     }
 
